@@ -8,11 +8,21 @@ Authentication & Roles: ASP.NET Identity with role-based access (Admin / User)
 
 ## Features:
 
-Admin Panel
+- Admin Panel
 
-Clean folder structure for learning or reuse in other projects.
+- Image upload
 
-This project serves as a starter template for admin panels with Identity, role management, file uploads, mappings, viewmodels, services and structured architecture.
+- Interfaces: IImageService. IRepository
+
+- Services: ImageService, Repository
+
+- AutoMapper
+
+- ViewModels
+
+- Clean folder structure for learning or reuse in other projects.
+
+- This project serves as a starter template for admin panels with Identity, role management, file uploads, mappings, viewmodels, services and structured architecture.
 
 ![Screenshot 2025-06-08 180521](https://github.com/user-attachments/assets/bbe19664-ce2f-484a-90e8-688e483f8a37)
 

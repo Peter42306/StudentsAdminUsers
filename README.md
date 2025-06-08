@@ -2,15 +2,25 @@
 
 Type: ASP.NET Core MVC template
 
-## Database: SQLite (app.db)
-`Authentication & Roles: ASP.NET Identity with role-based access (Admin / User)
+Database: SQLite (app.db)
 
-`Project Structure:`
-Models:
+Authentication & Roles: ASP.NET Identity with role-based access (Admin / User)
+
+## Features:
+
+Admin Panel
+
+Clean folder structure for learning or reuse in other projects.
+
+## Project Structure:
+
+**Models:**
+
 Student — represents student entity with basic properties (e.g., name, group).
+
 ApplicationUser — extends IdentityUser to support role-based access.
 
-Controllers:
+**Controllers:**
 
 StudentsController — handles CRUD operations for students.
 
@@ -32,24 +42,23 @@ ImageService — handles image uploads and deletions for student profiles.
 
 Repository — basic repository pattern for data access.
 
-Interfaces: Common abstractions (IRepository, IImageService).
+Interfaces: 
 
-Mappings: AutoMapper profile to convert between domain models and view models.
+IRepository, IImageService.
 
-Migrations: Initial EF Core migration to create the database schema.
+Mappings: 
 
-ViewModels: Example: StudentViewModel used to bind student forms.
+AutoMapper profile to convert between domain models and view models.
 
-✅ Key Features:
-Role-based authorization: only Admins can create/edit/delete students.
+### Migrations: 
 
-Image upload and removal for student profiles.
+Initial EF Core migration to create the database schema.
 
-EF Core with SQLite using Code First and Migrations.
+### ViewModels: 
 
-Clean folder structure for learning or reuse in other projects.
+Example: StudentViewModel used to bind student forms.
 
-🔧 Use Case:
+### Use Case:
 This project serves as a starter template for admin panels with Identity, role management, file uploads, and structured architecture — ideal for small admin dashboards or educational use.
 
 ![Screenshot 2025-06-08 180521](https://github.com/user-attachments/assets/bbe19664-ce2f-484a-90e8-688e483f8a37)

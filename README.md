@@ -1,4 +1,54 @@
+StudentsAdminEditors
+Type: ASP.NET Core MVC template
+Database: SQLite (app.db)
+Authentication & Roles: ASP.NET Identity with role-based access (Admin / User)
 
+Project Structure:
+Models:
+Student — represents student entity with basic properties (e.g., name, group).
+ApplicationUser — extends IdentityUser to support role-based access.
+
+Controllers:
+
+StudentsController — handles CRUD operations for students.
+
+ApplicationUsersController — displays registered users and their roles (read-only).
+
+Views:
+
+Razor views grouped into folders: Students, Home, ApplicationUsers.
+
+Data Layer:
+
+ApplicationDbContext — EF Core database context.
+
+DbInitializer — seeds initial roles and admin user.
+
+Services:
+
+ImageService — handles image uploads and deletions for student profiles.
+
+Repository — basic repository pattern for data access.
+
+Interfaces: Common abstractions (IRepository, IImageService).
+
+Mappings: AutoMapper profile to convert between domain models and view models.
+
+Migrations: Initial EF Core migration to create the database schema.
+
+ViewModels: Example: StudentViewModel used to bind student forms.
+
+✅ Key Features:
+Role-based authorization: only Admins can create/edit/delete students.
+
+Image upload and removal for student profiles.
+
+EF Core with SQLite using Code First and Migrations.
+
+Clean folder structure for learning or reuse in other projects.
+
+🔧 Use Case:
+This project serves as a starter template for admin panels with Identity, role management, file uploads, and structured architecture — ideal for small admin dashboards or educational use.
 
 ![Screenshot 2025-06-08 180521](https://github.com/user-attachments/assets/bbe19664-ce2f-484a-90e8-688e483f8a37)
 

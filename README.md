@@ -1,11 +1,11 @@
 # StudentsAdminEditors
 
-## Type: ASP.NET Core MVC template
+Type: ASP.NET Core MVC template
 
 ## Database: SQLite (app.db)
-## Authentication & Roles: ASP.NET Identity with role-based access (Admin / User)
+`Authentication & Roles: ASP.NET Identity with role-based access (Admin / User)
 
-Project Structure:
+`Project Structure:`
 Models:
 Student — represents student entity with basic properties (e.g., name, group).
 ApplicationUser — extends IdentityUser to support role-based access.
